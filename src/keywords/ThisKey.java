@@ -17,7 +17,6 @@ public class ThisKey {
 
     public static void main(String[] args) {
         new ThisKey("codekul").showData();
-
     }
 
 }
