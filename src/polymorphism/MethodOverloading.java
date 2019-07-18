@@ -2,9 +2,9 @@ package polymorphism;
 
 public class MethodOverloading {
 
-    static int add(int a,int b)
+    static void add(int a,int b)
     {
-        return (a+b);
+        System.out.println("addition : "+(a+b));
     }
 
     private static int[] emp()
@@ -13,8 +13,8 @@ public class MethodOverloading {
         return arr;
     }
 
-    static void add(){
-
+    static void add(float a,float b){
+        System.out.println("addition : "+(a+b));
     }
 
     public static void main(String[] args) {
@@ -23,9 +23,10 @@ public class MethodOverloading {
         for (int i=0;i<emp().length;i++){
             System.out.println(emp()[i]);
         }*/
+        add(1.1F,2.2F);
 
-        for (int j:emp()) {
+       /* for (int j:emp()) {
             System.out.println(j);
-        }
+        }*/
         }
 }
