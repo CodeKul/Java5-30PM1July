@@ -27,15 +27,29 @@ public class ExceptionHandlingDemo {
         }
     }
 
+    private void checkFinally(){
+        try {
+            String s = null;
+            System.out.println(s.length());
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+        finally {
+            System.out.println("Inside finally block");
+        }
+
+    }
+
     private static String getRestOfCode(){
         return "Rest of code";
     }
 
     public static void main(String[] args) {
         ExceptionHandlingDemo demo=new ExceptionHandlingDemo();
-        demo.checkNullPointerException();
+        demo.checkFinally();
         //checkArithmeticException();
-        System.out.println(getRestOfCode());
+        //System.out.println(getRestOfCode());
     }
 
 }
